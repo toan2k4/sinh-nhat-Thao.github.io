@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chúc mừng sinh nhật</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Sidebar desktop dạng icon */
+    .sidebar {
+      width: 70px;
+      transition: width 0.3s ease;
+      min-height: 100vh;
+      background: #f8f8fa;
+      box-shadow: 2px 0 8px #eee;
+      overflow: hidden;
+    }
+
+    .sidebar:hover {
+      width: 220px;
+    }
+
+    .sidebar h2 {
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .sidebar:hover h2 {
+      opacity: 1;
+    }
+
+    .sidebar .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+      color: #333;
+    }
+
+    .sidebar .nav-link.active {
+      background: #e2e6ea;
+      font-weight: bold;
+    }
+
+    .text-label {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .sidebar:hover .text-label {
+      opacity: 1;
+    }
+
+    /* Mobile style */
+    @media (max-width: 991.98px) {
+      .sidebar {
+        display: none !important;
+      }
+      iframe {
+        height: calc(100vh - 56px);
+      }
+    }
+
+    /* Iframe full màn hình */
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar Mobile -->
+  <nav class="navbar navbar-light bg-light d-lg-none">
+    <div class="container-fluid">
+      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar">
+        ☰ Menu
+      </button>
+      <span class="navbar-brand mb-0 h1">💖</span>
+    </div>
+  </nav>
+
+  <div class="d-flex">
+    <!-- Sidebar Desktop -->
+    <aside class="sidebar d-none d-lg-flex flex-column p-3">
+      <h2 class="mb-4">💖</h2>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item mb-2">
+          <a class="nav-link" href="Ngayyeu/index.html" target="content-frame">
+            💞 <span class="text-label">Ngày Yêu</span>
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link" href="https://panbap.github.io/Rainlovex/index.html?id=eyJtc2ciOiJDaOG7k25nIMahaXxjaOG7k25nIGJp4bq%2FdHxuYXkgbMOgIG5nw6B5fGfDrCBraMO0bmd8Y2jDumMgY2jhu5NuZ3xzaW5oIG5o4bqtdHx2dWkgduG6u3xuaGEg8J%2BYmHwyNi4xMS4yMDAyIiwiZ2lmIjoiLi9hc3NldHMvaDEuZ2lmIiwibXVzaWMiOiIuL2Fzc2V0cy8zLm1wMyIsInJhaW5UZXh0IjoiSSBMT1ZFIFlPVSIsInJhaW5Db2xvciI6IiNmNTg0YjcifQ%3D%3D" target="content-frame">
+            🚆 <span class="text-label">Railoves</span>
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link" href="Treelove/index.html" target="content-frame">
+            🌳 <span class="text-label">Treelove</span>
+          </a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link" href="YeuThuogQuiz/index.html" target="content-frame">
+            ❓ <span class="text-label">Yêu Thương Quiz</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Offcanvas mobile -->
+    <div class="offcanvas offcanvas-start d-lg-none" id="offcanvasSidebar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">💖</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="Ngayyeu/index.html" target="content-frame" data-bs-dismiss="offcanvas">💞 Ngày Yêu</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="https://panbap.github.io/Rainlovex/index.html?id=eyJtc2ciOiJDaOG7k25nIMahaXxjaOG7k25nIGJp4bq%2FdHxuYXkgbMOgIG5nw6B5fGfDrCBraMO0bmd8Y2jDumMgY2jhu5NuZ3xzaW5oIG5o4bqtdHx2dWkgduG6u3xuaGEg8J%2BYmHwyNi4xMS4yMDAyIiwiZ2lmIjoiLi9hc3NldHMvaDEuZ2lmIiwibXVzaWMiOiIuL2Fzc2V0cy8zLm1wMyIsInJhaW5UZXh0IjoiSSBMT1ZFIFlPVSIsInJhaW5Db2xvciI6IiNmNTg0YjcifQ%3D%3D" target="content-frame" data-bs-dismiss="offcanvas">🚆 Railoves</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="Treelove/index.html" target="content-frame" data-bs-dismiss="offcanvas">🌳 Treelove</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="YeuThuogQuiz/index.html" target="content-frame" data-bs-dismiss="offcanvas">❓ Yêu Thương Quiz</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <main class="content flex-grow-1">
+      <iframe name="content-frame" src="Ngayyeu/index.html"></iframe>
+    </main>
+  </div>
+<script>
+  function resizeIframe() {
+    const iframe = document.querySelector("iframe");
+    if (iframe && iframe.contentWindow.document.body.scrollHeight) {
+      // iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+    }
+  }
+  window.addEventListener("message", (event) => {
+    if (event.data.frameHeight) {
+      // document.querySelector("iframe").style.height = event.data.frameHeight + "px";
+    }
+  });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
