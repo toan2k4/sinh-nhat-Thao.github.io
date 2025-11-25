@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chúc mừng sinh nhật</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body, html {
+    body,
+    html {
       height: 100%;
       overflow: hidden;
     }
@@ -19,6 +21,17 @@
       background: #f8f8fa;
       box-shadow: 2px 0 8px #eee;
       overflow: hidden;
+    }
+
+    .sidebar {
+      position: fixed;
+      z-index: 9999;
+      /* ưu tiên cao nhất */
+    }
+
+    .overlay {
+      pointer-events: none;
+      /* không chặn click */
     }
 
     .sidebar:hover {
@@ -62,6 +75,7 @@
       .sidebar {
         display: none !important;
       }
+
       iframe {
         height: calc(100vh - 56px);
       }
@@ -73,14 +87,15 @@
       height: 100vh;
       border: none;
     }
-
   </style>
 </head>
+
 <body>
   <!-- Navbar Mobile -->
   <nav class="navbar navbar-light bg-light d-lg-none">
     <div class="container-fluid">
-      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar">
+      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasSidebar">
         ☰ Menu
       </button>
       <span class="navbar-brand mb-0 h1">💖</span>
@@ -98,7 +113,9 @@
           </a>
         </li>
         <li class="nav-item mb-2">
-          <a class="nav-link" href="https://panbap.github.io/Rainlovex/index.html?id=eyJtc2ciOiJDaOG7k25nIMahaXxjaOG7k25nIGJp4bq%2FdHxuYXkgbMOgIG5nw6B5fGfDrCBraMO0bmd8Y2jDumMgY2jhu5NuZ3xzaW5oIG5o4bqtdHx2dWkgduG6u3xuaGEg8J%2BYmHwyNi4xMS4yMDAyIiwiZ2lmIjoiLi9hc3NldHMvaDEuZ2lmIiwibXVzaWMiOiIuL2Fzc2V0cy8zLm1wMyIsInJhaW5UZXh0IjoiSSBMT1ZFIFlPVSIsInJhaW5Db2xvciI6IiNmNTg0YjcifQ%3D%3D" target="content-frame">
+          <a class="nav-link"
+            href="https://panbap.github.io/Rainlovex/index.html?id=eyJtc2ciOiJDaOG7k25nIMahaXxjaOG7k25nIGJp4bq%2FdHxuYXkgbMOgIG5nw6B5fGfDrCBraMO0bmd8Y2jDumMgY2jhu5NuZ3xzaW5oIG5o4bqtdHx2dWkgduG6u3xuaGEg8J%2BYmHwyNi4xMS4yMDAyIiwiZ2lmIjoiLi9hc3NldHMvaDEuZ2lmIiwibXVzaWMiOiIuL2Fzc2V0cy8zLm1wMyIsInJhaW5UZXh0IjoiSSBMT1ZFIFlPVSIsInJhaW5Db2xvciI6IiNmNTg0YjcifQ%3D%3D"
+            target="content-frame">
             🚆 <span class="text-label">Railoves</span>
           </a>
         </li>
@@ -115,25 +132,27 @@
       </ul>
     </aside>
 
-    <!-- Offcanvas mobile -->
+    <!-- Offcanvas MOBILE -->
     <div class="offcanvas offcanvas-start d-lg-none" id="offcanvasSidebar">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title">💖</h5>
+        <h5 class="offcanvas-title">💖 Menu</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
       </div>
+
       <div class="offcanvas-body">
         <ul class="nav nav-pills flex-column">
           <li class="nav-item mb-2">
-            <a class="nav-link" href="Ngayyeu/index.html" target="content-frame" data-bs-dismiss="offcanvas">💞 Ngày Yêu</a>
+            <a class="nav-link close-menu" href="Ngayyeu/index.html" target="content-frame">💞 Ngày Yêu</a>
           </li>
           <li class="nav-item mb-2">
-            <a class="nav-link" href="https://panbap.github.io/Rainlovex/index.html?id=eyJtc2ciOiJDaOG7k25nIMahaXxjaOG7k25nIGJp4bq%2FdHxuYXkgbMOgIG5nw6B5fGfDrCBraMO0bmd8Y2jDumMgY2jhu5NuZ3xzaW5oIG5o4bqtdHx2dWkgduG6u3xuaGEg8J%2BYmHwyNi4xMS4yMDAyIiwiZ2lmIjoiLi9hc3NldHMvaDEuZ2lmIiwibXVzaWMiOiIuL2Fzc2V0cy8zLm1wMyIsInJhaW5UZXh0IjoiSSBMT1ZFIFlPVSIsInJhaW5Db2xvciI6IiNmNTg0YjcifQ%3D%3D" target="content-frame" data-bs-dismiss="offcanvas">🚆 Railoves</a>
+            <a class="nav-link close-menu" href="https://panbap.github.io/Rainlovex/index.html?id=..."
+              target="content-frame">🚆 Railoves</a>
           </li>
           <li class="nav-item mb-2">
-            <a class="nav-link" href="Treelove/index.html" target="content-frame" data-bs-dismiss="offcanvas">🌳 Treelove</a>
+            <a class="nav-link close-menu" href="Treelove/index.html" target="content-frame">🌳 Treelove</a>
           </li>
           <li class="nav-item mb-2">
-            <a class="nav-link" href="YeuThuogQuiz/index.html" target="content-frame" data-bs-dismiss="offcanvas">❓ Yêu Thương Quiz</a>
+            <a class="nav-link close-menu" href="YeuThuogQuiz/index.html" target="content-frame">❓ Yêu Thương Quiz</a>
           </li>
         </ul>
       </div>
@@ -144,19 +163,28 @@
       <iframe name="content-frame" src="Ngayyeu/index.html"></iframe>
     </main>
   </div>
-<script>
-  function resizeIframe() {
-    const iframe = document.querySelector("iframe");
-    if (iframe && iframe.contentWindow.document.body.scrollHeight) {
-      // iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+  <script>
+    function resizeIframe() {
+      const iframe = document.querySelector("iframe");
+      if (iframe && iframe.contentWindow.document.body.scrollHeight) {
+        // iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+      }
     }
-  }
-  window.addEventListener("message", (event) => {
-    if (event.data.frameHeight) {
-      // document.querySelector("iframe").style.height = event.data.frameHeight + "px";
-    }
-  });
-</script>
+    window.addEventListener("message", (event) => {
+      if (event.data.frameHeight) {
+        // document.querySelector("iframe").style.height = event.data.frameHeight + "px";
+      }
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.querySelectorAll(".close-menu").forEach(item => {
+      item.addEventListener("click", () => {
+        const menu = bootstrap.Offcanvas.getInstance(document.getElementById("offcanvasSidebar"));
+        if (menu) menu.hide();
+      });
+    });
+  </script>
 </body>
+
 </html>
